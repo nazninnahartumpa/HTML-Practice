@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>This is blog project</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+
+	<link href="tooplate_style.css" rel="stylesheet" type="text/css" />
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
+	<script language="javascript" type="text/javascript">
+	function clearText(field)
+	{
+	if (field.defaultValue == field.value) field.value = '';
+	else if (field.value == '') field.value = field.defaultValue;
+	}
+	</script>
+
+	<link rel="stylesheet" href="css/nivo-slider.css" type="text/css" media="screen" />
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js" type="text/javascript"></script>
+	<script src="js/jquery.nivo.slider.js" type="text/javascript"></script>
+
+	<script type="text/javascript">
+	$(window).load(function() {
+	$('#slider').nivoSlider({
+		effect:'random',
+		slices:10,
+		animSpeed:500,
+		pauseTime:5000,
+		startSlide:0, //Set starting Slide (0 index)
+		directionNav:false,
+		directionNavHide:false, //Only show on hover
+		controlNav:false, //1,2,3...
+		controlNavThumbs:false, //Use thumbnails for Control Nav
+		pauseOnHover:true, //Stop animation while hovering
+		manualAdvance:false, //Force manual transitions
+		captionOpacity:0.8, //Universal caption opacity
+		beforeChange: function(){},
+		afterChange: function(){},
+		slideshowEnd: function(){} //Triggers after all slides have been shown
+	});
+	});
+	</script>
+</head>
+<body>
+	<div class="headersection template clear">
+		<div class="logo clear">
+			<img src="images/logo/logo.png">
+			<h3>This is Heading</h3>
+			<p>This is description</p>
+		</div>
+		<div class="socialicon clear">
+			<a href=""><i class="fab fa-facebook-f"></i></a>
+			<a href=""><i class="fab fa-google-plus-g"></i></a>
+			<a href=""><i class="fab fa-linkedin-in"></i></a>
+			<a href=""><i class="fab fa-youtube"></i></a>
+		</div>
+	</div>
+	<div class="navsection template">
+		<ul>
+			<li><a href="index.html" id="active">Home</a></li>
+			<li><a href="about.html">About</a></li>
+			<li><a href="service.html">Service</a></li>
+			<li><a href="contact.html">Product</a>
+				<ul>
+					<li><a hre="">Product One</a></li>
+					<li><a hre="">Product Two</a></li>
+					<li><a hre="">Product Three</a></li>
+					<li><a hre="">Product Four</a></li>
+				</ul>
+			</li>
+			<li><a href="contact.html">Contact</a>
+				<ul>
+					<li><a hre="">Address One</a></li>
+					<li><a hre="">Address Two</a></li>
+					<li><a hre="">Address Three</a></li>
+					<li><a hre="">Address Four</a></li>
+				</ul>
+
+			</li>
+			<li><a href="contact.html">privacy</a></li>
+		</ul>
+	</div>
+	<div class="slidersection template clear">
+		<div id="slider">
+            <a href="#"><img src="images/slideshow/01.jpg" alt="nature 1" title="This is First slider" /></a>
+            <a href="#"><img src="images/slideshow/02.jpg" alt="nature 2" title="This is Second slider" /></a>
+            <a href="#"><img src="images/slideshow/03.jpg" alt="nature 3" title="This is Third slider" /></a>
+            <a href="#"><img src="images/slideshow/04.jpg" alt="nature 4" title="This is Fourth slider" /></a>
+        </div>
+	</div>
+	<div class="contentsection template clear">
+		<div class="maincontent clear">
+			<div class="post clear">
+				<h2>This Is a Heading</h2>
+				<img src="images/image1.jpg" alt="post image">
+				<p>
+					It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+				</p>
+				<div class="readmore"><a href="">Read More</a></div>
+			</div>
+			<div class="post clear">
+				<h2>This Is a Heading</h2>
+				<img src="images/image1.jpg" alt="post image">
+				<p>
+					It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+				</p>
+				<div class="readmore"><a href="">Read More</a></div>
+				<iframe width="100%" height="315" src="https://www.youtube.com/embed/v4SVKLTVNS8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			</div>
+			
+		</div>
+		<div class="sidebarsection template clear">
+			<div class="sidebarheading clear">
+				<h3>This is Heading</h3>
+				<p>
+					It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+				</p>
+				<h3>This is Heading</h3>
+				<p>
+					It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+				</p>
+			</div>
+			
+		</div>
+	</div>
+	<div class="footersection template clear">
+		<div class="footermanu template clear">
+			<ul>
+				<li><a href="#">Home</a></li>
+				<li><a href="#">About</a></li>
+				<li><a href="#">Service</a></li>
+				<li><a href="#">Contact</a></li>
+			</ul>
+			<p>&copy; Copyright By Tumpa</p>
+		</div>
+	</div>
+
+	<div class="fixedicon clear">
+		<a href="https://www.facebook.com"><img src="images/fb.png" alt="facebook"></a>
+		<a href="https://www.google.com"><img src="images/gp.png" alt="google_plus"></a>
+		<a href="https://www.twitter.com"><img src="images/tw.png" alt="twitter"></a>
+		<a href="https://www.youtube.com"><img src="images/yt.png" alt="youtube"></a>
+	</div>
+</body>
+<script type="text/javascript" src="js/scrolltop.js"></script>
+</html>
